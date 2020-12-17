@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="text-center" style="padding:50px 0">
+        <div class="logo">Edit Your Details</div>
+        <div class="login-form-1">
+            <form  action="" method="post">
+                <div class="login-form-main-message"></div>
+                <div class="main-login-form">
+                    <div class="login-group">
+                            <div class="form-group">
+                                <label for="reg_firstname" class="sr-only">Firstname</label>
+                                <input type="text" class="form-control" id="reg_firstname" name="reg_firstname"
+                                    placeholder={{firstname}}>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_lastname" class="sr-only">Lastname</label>
+                                <input type="text" class="form-control" id="reg_lastname" name="reg_lastname"
+                                    placeholder={{lastname}}>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_phno" class="sr-only">Phonenumber</label>
+                                <input type="text" class="form-control" id="reg_phno" name="reg_phno"
+                                    placeholder={{phoneno}}>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_ssc" class="sr-only">SSC GPA/%</label>
+                                <input type="text" class="form-control" id="reg_ssc" name="reg_ssc" placeholder={{sscgpa}}>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_sscboard" class="sr-only">SSC Board</label>
+                                <input type="text" class="form-control" id="reg_sscboard" name="reg_sscboard"
+                                    placeholder={{sscboard}}>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_yop" class="sr-only">Year of passing</label>
+                                <input type="text" class="form-control" id="reg_yop" name="reg_yop_ssc" placeholder={{boardyop}}>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_inter" class="sr-only">Internediate GPA/%</label>
+                                <input type="text" class="form-control" id="reg_inter" name="reg_inter"
+                                    placeholder={{intergpa}}>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_yop" class="sr-only">Year of passing</label>
+                                <input type="text" class="form-control" id="reg_yop" name="reg_yop_inter" placeholder={{interyop}}>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_board" class="sr-only">Inter Board</label>
+                                <input type="text" class="form-control" id="reg_board" name="reg_board"
+                                    placeholder={{interboard}}>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_ug" class="sr-only">UG GPA</label>
+                                <input type="text" class="form-control" id="reg_ug" name="reg_ug" placeholder={{uggpa}}>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_board" class="sr-only">Affiliated To</label>
+                                <input type="text" class="form-control" id="reg_board" name="reg_university"
+                                    placeholder={{affliated}}>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_yop" class="sr-only">Year of passing</label>
+                                <input type="text" class="form-control" id="reg_yop" name="reg_yop_board" placeholder={{ugyop}}>
+                            </div>
+                    </div>
+                    <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

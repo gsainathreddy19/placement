@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="text-center" style="padding:50px 0">
+
+        <div class="logo">Register</div>
+
+
+        <div class="login-form-1">
+
+            <form  action="" method="post">
+
+                <div class="login-form-main-message"></div>
+
+                <div class="main-login-form">
+
+                    <div class="login-group">
+
+                            <div class="form-group">
+
+                                <label for="reg_firstname" class="sr-only">Firstname</label>
+
+                                <input type="text" class="form-control" id="reg_firstname" name="reg_firstname"
+                                    placeholder=firstname>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="reg_lastname" class="sr-only">Lastname</label>
+
+                                <input type="text" class="form-control" id="reg_lastname" name="reg_lastname"
+                                    placeholder="lastname">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="reg_password" class="sr-only">Password</label>
+
+                                <input type="password" class="form-control" id="reg_password" name="reg_password"
+                                    placeholder="password">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="reg_password_confirm" class="sr-only">Confirm Password</label>
+
+                                <input type="password" class="form-control" id="reg_password_confirm"
+                                    name="reg_password_confirm" placeholder="confirm">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="reg_email" class="sr-only">Email</label>
+
+                                <input type="text" class="form-control" id="reg_email" name="reg_email"
+                                    placeholder="email">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="reg_Dob" class="sr-only">Dob</label>
+
+                                <input type="date" class="form-control" min="01-04-1998" max="01-04-2020" id="reg_Dob"
+                                    name="reg_Dob" placeholder="Dob">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="reg_phno" class="sr-only">Phonenumber</label>
+
+                                <input type="text" class="form-control" id="reg_phno" name="reg_phno"
+                                    placeholder="phno">
+
+                            </div>
+
+
+                            <div class="form-group login-group-checkbox">
+
+                                <label for="reg_gender" class="sr-only">Gender</label>
+                                <input type="radio" class="" name="reg_gender" id="male" placeholder="username">
+
+                                <label for="male">male</label>
+
+
+                                <input type="radio" class="" name="reg_gender" id="female" placeholder="username">
+
+                                <label for="female">female</label>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="reg_ssc" class="sr-only">SSC GPA/%</label>
+
+                                <input type="text" class="form-control" id="reg_ssc" name="reg_ssc" placeholder="ssc">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="reg_sscboard" class="sr-only">SSC Board</label>
+
+                                <input type="text" class="form-control" id="reg_sscboard" name="reg_sscboard"
+                                    placeholder="sscboard">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="reg_yop" class="sr-only">Year of passing</label>
+
+                                <input type="text" class="form-control" id="reg_yop" name="reg_yop_ssc" placeholder="yop">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="reg_inter" class="sr-only">Internediate GPA/%</label>
+
+                                <input type="text" class="form-control" id="reg_inter" name="reg_inter"
+                                    placeholder="inter">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="reg_yop" class="sr-only">Year of passing</label>
+
+                                <input type="text" class="form-control" id="reg_yop" name="reg_yop_inter" placeholder="yop">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="reg_board" class="sr-only">Inter Board</label>
+
+                                <input type="text" class="form-control" id="reg_board" name="reg_board"
+                                    placeholder="board">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="reg_ug" class="sr-only">UG GPA</label>
+
+                                <input type="text" class="form-control" id="reg_ug" name="reg_ug" placeholder="ug">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="reg_board" class="sr-only">Affiliated To</label>
+
+                                <input type="text" class="form-control" id="reg_board" name="reg_university"
+                                    placeholder="board">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="reg_yop" class="sr-only">Year of passing</label>
+
+                                <input type="text" class="form-control" id="reg_yop" name="reg_yop_board" placeholder="yop">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="reg_cv" class="sr-only">Upload CV</label>
+
+                                <input type="file" class="form-control" id="reg_cv" name="reg_cv" placeholder="cv">
+
+                            </div>
+
+
+                            <div class="form-group login-group-checkbox">
+
+                                <input type="checkbox" class="" id="reg_agree" name="reg_agree">
+
+                                <label for="reg_agree">I agree with <a href="#">terms and conditions</a></label>
+
+                            </div>
+
+                    </div>
+
+                    <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
+
+                </div>
+
+                <div class="etc-login-form">
+
+                    <p>already have an account? <a href="login">login here</a></p>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

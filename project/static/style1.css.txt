@@ -1,0 +1,17 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: Century Gothic;
+}
+h1{
+  text-align: center;
+  font-size:50px;
+  color: steelblue;
+  font-style: italic;
+  font-familt: Arial,"Times New Roman";
+}
+p{
+  font-size: 22px;
+  line-height: 30px;
+  text-indent: 30px;
+}

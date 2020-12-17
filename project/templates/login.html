@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LOGIN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="text-center" style="padding:50px 0">
+    <div class="logo">Login</div>
+    <div class="login-form-1">
+      <div class="login-form-main-message"></div>
+      <div class="main-login-form">
+        <div class="login-group">
+          <form action="" method="post">
+            <input type="text" placeholder="Username" name="username" value="{{
+                request.form.username }}">
+            <input type="password" placeholder="Password" name="password" value="{{
+                request.form.password }}">
+            <input class="btn btn-default" type="submit" value="Login">
+          </form>
+          {% if error %}
+          <p class="error"><strong>Error:</strong> {{ error }}
+            {% endif %}
+        </div>
+        <div class="container">
+          <form action="" method="post">
+        </div>
+      </div>
+      </form>
+      <div class="etc-login-form">
+        <form method="post">
+          <p>Forgot Password ?: {{ButtonPressed}}</p>
+          <input type="submit" name="buttons" value="Click Here">
+          <p>new user?</p>
+          <input type="submit" name="buttons" value="Create account for Student">
+          <input type="submit" name="buttons" value="Create account for Recruiter">
+        </form>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
